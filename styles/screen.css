@@ -1,0 +1,102 @@
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    body{
+        display: unset;
+    }
+    .container{
+        background-color: var(--blue-color);
+        height: 100%;
+        font-size: 2.5rem;
+        padding-left: 40px;
+      }
+      .dashboard-container{
+        display: unset;
+      }
+      .column1{
+        position: unset;
+        display: none;
+      }
+      .column2{
+        width: 100%;
+        flex-basis: unset !important;
+        margin-left: 0 !important;
+        padding: 20px 7px !important;
+      }
+      table.available{
+        margin-top: 60px;
+        width: 100% !important;
+      }
+      .form-control.d-flex{
+        display: unset;
+      }
+      input[name="title"]{
+        width: 100%;
+      }
+      .item-custom{
+        margin-bottom: 30px;
+      }
+      .projects-container{
+        display: block !important;
+      }
+      .d-flex{
+        display: unset !important;
+      }
+      .members-view{
+        margin-top: 40px;
+      }
+      .inner-columns-1 div{
+        width: 100% !important;
+        margin-top: 40px;
+      }
+      .inner-columns-1 div:last-of-type{
+        margin-bottom: 40px;
+      }
+      [class^="mobile"] {
+        display: unset !important;
+      }
+      .mobile{
+        display: flex !important;
+        background-color: #00274c;
+        height: 70px;
+        padding: 0 7px;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .mobile .icon img{
+        width: 50%;
+      }
+      .open-btn{
+        border: none;
+        font-size: 30px;
+        background-color: transparent;
+        color: white;
+      }
+      ul.items-list{
+        background-color: #00274c;
+      }
+      ul.items-list li a{
+        color: white;
+      }
+      .inner-columns-2{
+        margin-left: 0 !important;
+      }
+      .project-overview > p{
+        line-height: 30px;
+      }
+      .success{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: green;
+        color: white;
+        font-size: smaller;
+      }
+      .success button{
+        border: none;
+        color: white;
+        outline: none;
+        background-color: transparent;
+      }
+      
+}

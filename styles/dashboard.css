@@ -1,0 +1,326 @@
+@import "./screen.css";
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.justify-content-between{
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    list-style: none;
+}
+
+ul a{text-decoration: none;color: rgba(255, 255, 255, 0.3);}
+ul.items-list li a{
+    display: block;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    padding: 0 7px;
+}
+ul.items-list li:nth-of-type(5){
+    border-bottom: 1px solid rgba(255, 255, 255, 0.274);
+}
+ul.items-list li a:hover {
+    color: white;
+}
+.active{
+    color: white;
+}
+.dashboard-container{
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.column1{
+    width: 15%;
+    padding: 40px 0;
+    position: fixed;
+    height: 100%;
+    background-color: #00274c;
+    font-weight: 300;
+}
+.column2{
+    flex-basis: 85%;
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: #EBEFF7;
+    padding: 40px;
+    margin-left: 15%;
+    color: black;
+}
+.course{
+    height: 100px;
+    width: 650px;
+}
+.members{
+    height: fit-content;
+    width: 650px;
+    padding: 40px;
+    color: black;
+}
+.t-members{
+    margin-top: 20px;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+}
+.course h2{
+    padding-bottom: 30px;
+}
+.project-overview{
+    /* background-color: #292F46; */
+    margin-top: 30px;
+
+}
+.project-overview{
+    font-weight: 300;
+
+}
+.project-overview span{
+    font-size: 20px;
+    /* color: white; */
+}
+.project-overview p:first-of-type{
+    margin-top: 30px;
+}
+.available{
+    margin-top: 10px;
+    width: 60%;
+}
+table{
+    border-spacing: 0 10px;
+}
+table.members{
+    width: 100%;
+    padding: 0;
+    margin-top: 20px;
+}
+table.members thead tr th{
+    font-weight: 400;
+    font-size: 15px;
+}
+table.members thead tr{
+    font-weight: 300;
+    text-align: left;
+    color: white;
+}
+table.members tbody tr{
+    font-weight: 300;
+    background-color: white;
+    height: 50px;
+}
+
+table.available tr{
+    font-weight: 300;
+    background-color: white;
+    height: 60px;
+}
+table.available td,table.members tbody td{
+    padding: 0 15px;
+}
+table.available td{
+    margin-right: 0 !important;
+}
+.members-container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.custom-1{
+    flex-basis: 20%;
+}
+.custom-2{
+    flex-basis: 80%;
+    margin-left: 30px;
+    padding: 30px;
+}
+ul.team-lists{
+    background-color: #00274c;
+    padding: 5px;
+}
+ul.team-lists li a{
+    display: block;
+    color: #F2F2F2;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    padding: 0 7px;
+}
+table.members-table{
+    width: 100%;
+    border-spacing: 1px 1px;
+    margin-top: 20px;
+}
+table.members-table tr{
+    height: 60px;
+}
+table.members-table tbody tr{
+    background-color: white
+}
+.members-table thead tr {
+    text-align: left;
+}
+.members-table thead tr th {
+    padding: 0 15px;
+    font-weight: 300;
+}
+.members-table tbody tr td{
+    padding: 0 15px;
+    font-weight: 300;
+}
+table.members-table thead{
+    background-color: #F7F9FA;
+    height: 100%;
+}
+.first-item{
+    flex-basis: 45%;
+}
+.mt{
+    margin-top: 10px;
+}
+.d-flex{
+    display: flex;
+}
+.item-custom{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+}
+input{
+    padding: 9px 15px;
+    width: 90%;
+}
+select{
+    padding: 9px 15px;
+}
+textarea{
+    display: block;
+    width: 100%;
+    height: 300px;
+    resize: none;
+    padding: 20px;
+}
+.pr{
+    padding-right: 10px ;
+}
+input[type='submit']{
+    width: fit-content;
+    margin-top: 10px;
+}
+.projects-container{
+    display: flex;
+}
+.project-view{
+    background-color: white;
+    padding: 20px;
+    flex-basis: 70%;
+    display: block;
+    margin-right: 10px;
+}
+.members-table tbody tr td{
+    font-size: 13px;
+}
+
+.members-view{
+    background-color: white;
+    flex-basis: 30%;
+    padding: 20px;
+    color: black;
+    min-height: 50%;
+}
+.members-view h3{
+    font-weight: 400;
+}
+.members-container-custom{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.members-container-custom span{
+    font-size: 12px;
+    color: rgba(74, 68, 68, 0.519);
+}
+.members-container-custom div{
+    font-size: 13.5px;
+
+}
+.inner-columns-1{
+    display: flex;
+    flex-direction: column;
+    --width:270px;
+}
+.inner-columns-1 div{
+    height: fit-content;
+    width: var(--width);
+    background-color: white;
+    display: block;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+.inner-columns-1 div span:nth-of-type(2){
+    font-size: 30px;
+}
+.inner-columns-1 div span:last-of-type{
+    height: 20px;
+    display: inline-flex;
+    width:40px;
+    background-color: rgba(0, 128, 0, 0.591);
+    place-content: center;
+    place-items: center;
+    font-size: 10px;
+    color: white;
+}
+.inner-columns-2{
+    width: 100%;
+    height: 200px;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    padding:30px 20px;
+    margin-left: 10px;
+}
+.project-overview p{
+    line-height: 30px;
+  }
+.inner-columns-2 span{
+    font-size: 60px;
+}
+.members-view{
+    height: 330px;
+}
+.hidden{
+    display: none;
+}
+[class^="mobile"] {
+    display: none;
+}
+.success{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    font-size: smaller;
+}
+.success button{
+    border: none;
+    color: white;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
